@@ -2,23 +2,19 @@ navbar:
   structure:
     left:
     - home
-    - intro
     - reference
-    - articles
-    - tutorials
-    - news
-    right: github
+    right: gitlab
   components:
     home:
       icon: fas fa-home fa-lg
       href: index.html
     reference:
-    href: reference/index.html
-    - title: All datasets
+      href: reference/index.html
+      title: All datasets
       contents:
+      - qbgbaExtraData
       - peopleCareFacilitiesCategorical
       - populationGermany
-      - qbgbaExtraData
       - socialInsuranceWorkplaceSectors
       - unemployedPercentagesCategories
       - unemploymentCountsAge

@@ -7,6 +7,7 @@ Maintainer: Ulf Koether <ukoether@krt-medical.de>
 Description: Reading data from several other sources, i.e., the GENESIS API 
     (\link{https://www-genesis.destatis.de/genesis/online?Menu=Webservice}) and the 
     "Regionaldatenbank" (\link{https://www.regionalstatistik.de/genesis/online}).
+URL: https://gitlab.com/klinik-db/qbgbaExtraData
 License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true
