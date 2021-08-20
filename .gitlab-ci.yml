@@ -4,7 +4,7 @@ pages:
   stage: deploy
   script:
      - R -e 'install.packages("pkgdown")'
-     - R -e "pkgdown::build_site()"
+     - R -e 'pkgdown::build_site()'
   artifacts:
     paths:
       - public
