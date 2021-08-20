@@ -1,12 +1,10 @@
-image: debian:buster-slim
-
-before_script:
-  - apt-get update && apt-get -y install pandoc r-base
-  - R -e "install.packages('pkgdown')"
+image: r-base
 
 pages:
+  stage: deploy
   script:
-    - R -e "pkgdown::build_site()"
+     - R -e 'install.packages(c("dplyr", "purrr", "pkgdown"))'
+     - R -e "pkgdown::build_site()"
   artifacts:
     paths:
       - public
