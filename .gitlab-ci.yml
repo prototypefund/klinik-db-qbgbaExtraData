@@ -3,8 +3,9 @@ image: r-base
 pages:
   stage: deploy
   script:
-     - R -e 'install.packages("pkgdown")'
-     - R -e 'pkgdown::build_site()'
+    - R -e 'options(repos = c(REPO_NAME = "https://packagemanager.rstudio.com/all/latest"))'
+    - R -e 'install.packages("pkgdown")'
+    - R -e 'pkgdown::build_site()'
   artifacts:
     paths:
       - public
