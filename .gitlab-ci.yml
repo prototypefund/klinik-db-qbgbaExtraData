@@ -3,7 +3,7 @@ image: r-base
 pages:
   stage: deploy
   script:
-     - R -e 'install.packages(c("dplyr", "purrr", "pkgdown"))'
+     - R -e 'install.packages("pkgdown")'
      - R -e "pkgdown::build_site()"
   artifacts:
     paths:
