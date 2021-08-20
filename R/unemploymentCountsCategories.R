@@ -1,0 +1,45 @@
+#' Unemployment numbers regarding every county in Germany from 2015 to 2020 with a focus on different groups.
+#'
+#' This dataset contains unemployment numbers from all German counties over the
+#' years 2015 to 2020, with a focus on foreigners, disabled persons and
+#' the long-term unemployed.
+#'
+#' @format A \code{tibble} with 12,504 rows and five columns:
+#' \describe{
+#'   \item{\code{year}}{A string with values "2015", "2016", "2017", "2018", "2019"
+#'       and "2020", indicating to which year the data belongs. Every year is
+#'       reported on the last day of the year, i.e., the 31st of December each
+#'       year.}
+#'   \item{\code{AGS}}{This character string comprises the "Amtliche Gemeindeschluessel"
+#'       (AGS) for each county, where the first and second character represents
+#'       the state, the third character the district and the fourth and fifth
+#'       character represents the county.}
+#'   \item{\code{name}}{A character value with the name of the respective county.}
+#'   \item{\code{category}}{A character value indicating the (sub-) grouping the data
+#'       belongs to. There are total numbers and three other categories:
+#'
+#'       \itemize{
+#'           \item{total}
+#'           \item{foreigner}
+#'           \item{severely_disabled}
+#'           \item{long_term_unemployed}
+#'       }
+#'   }
+#'   \item{\code{count}}{An integer value with the count of unemployed people.}
+#' }
+#'
+#' @source Obtained from the \emph{Regionalstatistik} data base:
+#'
+#'     \href{https://www.regionalstatistik.de/genesis/online?operation=find&suchanweisung_language=de&query=13211-02-05-4}{Table "13211-02-05-4 - Arbeitslose nach ausgewählten Personengruppen sowie Arbeitslosenquoten - Jahresdurchschnitt"}
+#'
+#'     \emph{Source:} Arbeitsmarktstatistik der Bundesagentur für Arbeit (BA).
+#'
+#'     \emph{Copyright:} "Statistische Aemter des Bundes und der Laender, Deutschland, 2021.
+#'     Dieses Werk ist lizenziert unter der Datenlizenz Deutschland - Namensnennung -
+#'     Version 2.0."
+#'
+#'     \emph{Licence:} \url{www.govdata.de/dl-de/by-2-0}
+#'
+#'     Obtained on the 17.08.2021 at 19:38:04.
+#'
+"unemploymentCountsCategories"

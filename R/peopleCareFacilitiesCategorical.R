@@ -1,0 +1,43 @@
+#' People with the need of care in every county in Germany from 2015 to 2020.
+#'
+#' This dataset contains counts of people with different levels of needed care
+#' all German counties over the years 2015 to 2020, with a focus on different kind
+#' of care facilities and degrees of disabilities.
+#'
+#' @format A \code{tibble} with 3,126 rows and thirteen columns:
+#' \describe{
+#'   \item{\code{year}}{A string with values "2015", "2016", "2017", "2018", "2019"
+#'       and "2020", indicating to which year the data belongs. Every year is
+#'       reported on the last day of the year, i.e., the 31st of December each
+#'       year.}
+#'   \item{\code{AGS}}{This character string comprises the "Amtliche Gemeindeschluessel"
+#'       (AGS) for each county, where the first and second character represents
+#'       the state, the third character the district and the fourth and fifth
+#'       character represents the county.}
+#'   \item{\code{name}}{A character value with the name of the respective county.}
+#'   \item{\code{gender}}{A character value of either "female" or "male".}
+#'   \item{\code{persons_needing_care}}{An integer value.}
+#'   \item{\code{people_with_significant_disabilities}}{An integer value.}
+#'   \item{\code{outpatient_care}}{An integer value.}
+#'   \item{\code{full_stationary_care}}{An integer value.}
+#'   \item{\code{fully_inpatient_care}}{An integer value.}
+#'   \item{\code{short_term_stationary_care}}{An integer value.}
+#'   \item{\code{recipients_of_long_term_care_allowance}}{An integer value.}
+#'   \item{\code{partial_inpatient_care}}{An integer value.}
+#'   \item{\code{care_level_with_considerable_diminished_abilities}}{An integer value.}
+#'
+#' }
+#'
+#' @source Obtained from the \emph{Regionalstatistik} data base:
+#'
+#'     \href{https://www.regionalstatistik.de/genesis/online?operation=find&suchanweisung_language=de&query=22411-02-03-4}{Table "22411-02-03-4 - Pflegebedürftige nach Leistungsart und Geschlecht"}
+#'
+#'     \emph{Copyright:} "Statistische Aemter des Bundes und der Laender, Deutschland, 2021.
+#'     Dieses Werk ist lizenziert unter der Datenlizenz Deutschland - Namensnennung -
+#'     Version 2.0."
+#'
+#'     \emph{Licence:} \url{www.govdata.de/dl-de/by-2-0}
+#'
+#'     Obtained on the 17.08.2021 at 20:30:38.
+#'
+"peopleCareFacilitiesCategorical"

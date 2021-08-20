@@ -1,0 +1,40 @@
+---
+output: github_document
+---
+
+# qbgbaExtraData <img src='man/figures/logo.png' align="right" height="139" />
+
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of qbgbaExtraData is to ...
+
+## Installation
+
+You can install the released version of qbgbaExtraData from [CRAN](https://CRAN.R-project.org) with:
+
+```{r eval=FALSE}
+install.packages("qbgbaExtraData")
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example}
+library(qbgbaExtraData)
+## basic example code
+```
+
