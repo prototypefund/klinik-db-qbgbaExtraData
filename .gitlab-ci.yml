@@ -2,8 +2,7 @@ image: rocker/r-ver
 
 before_script:
   - apt-get update
-  - apt-get -y install libcurl4-openssl-dev libssl-dev libxml2-dev libglu1-mesa-dev libssh2-1-dev libfontconfig1-dev libharfbuzz-dev libfribidi-dev libgit2-dev libfreetype6-dev libpng-dev libtiff5-dev libjpeg-dev pandoc r-cran-devtools r-cran-testthat r-cran-curl r-bioc-biostrings
-  - bash -c '[ -d docs ] && rm -rf docs && mkdir -p docs'
+  - apt-get -y install libcurl4-openssl-dev libssl-dev libxml2-dev libglu1-mesa-dev libssh2-1-dev libfontconfig1-dev libharfbuzz-dev libfribidi-dev libgit2-dev libfreetype6-dev libpng-dev libtiff5-dev libjpeg-dev pandoc r-cran-devtools r-cran-testthat r-cran-curl
 
 pages:
   stage: deploy
@@ -16,6 +15,3 @@ pages:
   only:
     - master
 
-
-
-## Set HTTPUserAgent for RSPM (https://github.com/rocker-org/rocker/issues/400)
