@@ -1,24 +1,37 @@
+template:
+  bootstrap: 4
+  bootswatch: cerulean
+
+home:
+  title: Extra datasets for the Klinik-DB project
+  icon: fas fa-home fa-lg
+  links:
+  - text: Online hospital search engine
+    href: https://klinik-db.de/
+
 navbar:
   structure:
-    left:
-    - home
-    - reference
-    right: gitlab
+    left:  [home, reference]
+    right: [gitlab]
   components:
-    home:
-      icon: fas fa-home fa-lg
-      href: index.html
-    reference:
-      href: reference/index.html
-      title: All datasets
-      contents:
-      - qbgbaExtraData
-      - peopleCareFacilitiesCategorical
-      - populationGermany
-      - socialInsuranceWorkplaceSectors
-      - unemployedPercentagesCategories
-      - unemploymentCountsAge
-      - unemploymentCountsCategories
+    gitlab:
+      icon: fab fa-gitlab fa-lg
+      href: https://gitlab.com/klinik-db/qbgbaExtraData
+
+reference:
+- title: General description
+  contents:
+  - qbgbaExtraData
+
+- title: All datasets
+  contents:
+  - peopleCareFacilitiesCategorical
+  - populationGermany
+  - socialInsuranceWorkplaceSectors
+  - unemployedPercentagesCategories
+  - unemploymentCountsAge
+  - unemploymentCountsCategories
+
 
 
 

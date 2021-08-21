@@ -55,21 +55,6 @@
 #' @importFrom rlang :=
 #' @importFrom readxl excel_sheets
 #' @importFrom readxl read_excel
-#' @importFrom RMariaDB dbConnect
-#' @importFrom RMariaDB dbGetInfo
-#' @importFrom RMariaDB dbListTables
-#' @importFrom RMariaDB dbExistsTable
-#' @importFrom RMariaDB dbListFields
-#' @importFrom RMariaDB dbSendStatement
-#' @importFrom RMariaDB dbSendQuery
-#' @importFrom RMariaDB dbGetQuery
-#' @importFrom RMariaDB dbBind
-#' @importFrom RMariaDB dbClearResult
-#' @importFrom RMariaDB dbDisconnect
-#' @importFrom RMariaDB dbHasCompleted
-#' @importFrom RMariaDB dbFetch
-#' @importFrom RMariaDB dbBegin
-#' @importFrom RMariaDB dbCommit
 #' @importFrom utils data
 #'
 NULL

@@ -2,12 +2,18 @@ Package: qbgbaExtraData
 Type: Package
 Title: Accessing and storing additional datasets to complement the "Qualitaetsberichte der Krankenhaeuser"
 Version: 0.1.0
-Author: Ulf Koether
-Maintainer: Ulf Koether <ukoether@krt-medical.de>
+Authors@R: 
+    c(person(given = "Ulf",
+             family = "Koether",
+             role = c("aut", "cre"),
+             email = "ukoether@krt-medical.de"),
+      person(given = "Project Klinik-DB",
+             role = c("cph", "fnd")))
 Description: Reading data from several other sources, i.e., the GENESIS API 
     (\link{https://www-genesis.destatis.de/genesis/online?Menu=Webservice}) and the 
     "Regionaldatenbank" (\link{https://www.regionalstatistik.de/genesis/online}).
-URL: https://gitlab.com/klinik-db/qbgbaExtraData
+URL: https://gitlab.com/klinik-db/qbgbaExtraData, https://klinik-db.de
+BugReports: https://gitlab.com/klinik-db/qbgbaExtraData/-/issues
 License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true
@@ -21,16 +27,8 @@ Imports:
     tibble,
     tidyr,
     stats,
-    progressr,
     readxl,
-    keyring,
-    DBI (>= 1.1.1),
-    RMariaDB (>= 1.1.1),
-    tmaptools, 
-    utils,
-    tictoc,
-    logger,
-    httr
+    utils
 RoxygenNote: 7.1.1
 Depends: 
     R (>= 4.0.0)
