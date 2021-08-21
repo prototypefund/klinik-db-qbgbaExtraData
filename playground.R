@@ -25,7 +25,6 @@ library(tidyverse)
 # retrieve_data("22111", genesis=c(db="de"))
 
 
-
 # Read CSV files ----------------------------------------------------------
 
 # Population and Employment -----------------------------------------------

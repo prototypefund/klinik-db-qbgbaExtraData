@@ -1,14 +1,14 @@
-image: r-base
+image: r-ver
 
 before_script:
   - apt-get update
   - apt-get -y install libcurl4-openssl-dev libssl-dev libxml2-dev libglu1-mesa-dev libssh2-1-dev libfontconfig1-dev libharfbuzz-dev libfribidi-dev libgit2-dev libfreetype6-dev libpng-dev libtiff5-dev libjpeg-dev pandoc r-cran-devtools r-cran-testthat r-cran-curl r-bioc-biostrings
-
+  - echo "options(repos = c(CRAN = 'https://cran.r-project.org'), download.file.method = 'libcurl')" >> ${R_HOME}/etc/Rprofile.site
+  - echo 'options(HTTPUserAgent = sprintf("R/%s R (%s)", getRversion(), paste(getRversion(), R.version$platform, R.version$arch, R.version$os)))' >> ${R_HOME}/etc/Rprofile.site
 
 pages:
   stage: deploy
   script:
-    - R -e 'options(repos = c(REPO_NAME = "https://packagemanager.rstudio.com/all/latest"))'
     - R -e 'install.packages("pkgdown")'
     - R -e 'pkgdown::build_site()'
   artifacts:
@@ -16,3 +16,7 @@ pages:
       - public
   only:
     - master
+
+
+
+## Set HTTPUserAgent for RSPM (https://github.com/rocker-org/rocker/issues/400)
