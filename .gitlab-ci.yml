@@ -1,10 +1,7 @@
-image: rocker/r-ver
+image: rocker/r-tidyverse:4.1.1
 
 before_script:
-  - apt-get update
-  - apt-get -y install unzip libcurl4-openssl-dev libssl-dev libxml2-dev libglu1-mesa-dev libssh2-1-dev libfontconfig1-dev libharfbuzz-dev libfribidi-dev libgit2-dev libfreetype6-dev libpng-dev libtiff5-dev libjpeg-dev pandoc r-cran-testthat r-cran-curl
-  - R -e 'install.packages("devtools", repos = "https://cran.rstudio.com/", type = "source")'
-  - R -e 'install.packages("pkgdown")'
+  - R -e 'devtools::install_github("r-lib/pkgdown")'
   - R -e 'devtools::install()'
 
 pages:
@@ -13,7 +10,7 @@ pages:
     - R -e "dir(); getwd(); sessionInfo(); pkgdown::build_site()"
   artifacts:
     paths:
-      - docs
+      - public
   only:
     - master
 
