@@ -12,3 +12,4 @@
 playground.R
 
 .gitlab-ci.yml
+^public$

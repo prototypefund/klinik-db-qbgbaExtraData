@@ -12,7 +12,9 @@ Authors@R:
 Description: Reading data from several other sources, i.e., the GENESIS API 
     (\link{https://www-genesis.destatis.de/genesis/online?Menu=Webservice}) and the 
     "Regionaldatenbank" (\link{https://www.regionalstatistik.de/genesis/online}).
-URL: https://gitlab.com/klinik-db/qbgbaExtraData, https://klinik-db.de
+URL: https://klinik-db.gitlab.io/qbgbaExtraData/, 
+    https://gitlab.com/klinik-db/qbgbaExtraData, 
+    https://klinik-db.de
 BugReports: https://gitlab.com/klinik-db/qbgbaExtraData/-/issues
 License: GPL (>= 3)
 Encoding: UTF-8
