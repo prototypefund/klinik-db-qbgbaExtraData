@@ -27,6 +27,7 @@ reference:
 
 - title: All datasets
   contents:
+  - AllHospitals
   - peopleCareFacilitiesCategorical
   - populationGermany
   - socialInsuranceWorkplaceSectors

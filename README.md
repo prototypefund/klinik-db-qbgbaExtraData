@@ -9,7 +9,8 @@
 The goal of qbgbaExtraData is to provide several datasets that can be
 used in conjunction with the data from the “Qualitaetsberichte der
 Krankenhaeuser”, which are puplished by the “Gemeinsamer
-Bundesausschuss” (GBA) on a yearly basis.
+Bundesausschuss” (GBA) on a yearly basis. To serve this purpose, a tiny
+excerpt of these is also included into this package, see `AllHospitals`.
 
 ## Installation
 
