@@ -6,7 +6,7 @@
 \title{qbgbaExtraData: A data package complementing the "Qualitaetsberichte" for
 German hospitals.}
 \description{
-This package aims at bundling several supplementary datasets that can be used
-in conjunction with the reports published by the "Gemeinsamer Bundesausschuss"
-(GBA), which contain information about the German clinical landscape.
+This package aims at bundling not only key variables from the reports published by
+the "Gemeinsamer Bundesausschuss" (GBA) but also several supplementary datasets that
+can be used in conjunction with these.
 }
