@@ -66,7 +66,6 @@
 #'   \item{\code{lon}}{Longitude regarding this hospital.}
 #' }
 #'
-#' @source
 #'
 "AllHospitals"
 

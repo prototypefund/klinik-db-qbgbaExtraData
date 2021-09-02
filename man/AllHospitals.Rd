@@ -67,9 +67,6 @@ A \code{tibble} with 11326 rows and 40 columns:
   \item{\code{lon}}{Longitude regarding this hospital.}
 }
 }
-\source{
-
-}
 \usage{
 AllHospitals
 }

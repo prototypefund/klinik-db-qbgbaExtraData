@@ -19,6 +19,7 @@ BugReports: https://gitlab.com/klinik-db/qbgbaExtraData/-/issues
 License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true
+LazyDataCompression: bzip2
 Imports:
     dplyr,
     magrittr,
@@ -30,7 +31,8 @@ Imports:
     tidyr,
     stats,
     readxl,
-    utils
+    utils,
+    sp
 RoxygenNote: 7.1.1
 Depends: 
     R (>= 4.0.0)
