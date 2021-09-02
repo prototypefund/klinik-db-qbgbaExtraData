@@ -218,11 +218,11 @@ map_kreise_EW2_clinics_summarized <- map_kreise_EW2_clinics_summarized %>%
 rm(df_tmp)
 
 
-mapBRDStates <- as_Spatial(map_land_EW2_clinics_summarized %>% select(-ID) %>% select(year, everything()))
+mapBRDStates <- map_land_EW2_clinics_summarized %>% select(-ID) %>% select(year, everything())
 
 usethis::use_data(mapBRDStates, overwrite = TRUE)
 
-mapBRDCounties <- as_Spatial(map_kreise_EW2_clinics_summarized %>% select(-ID, -name) %>% select(year, everything()))
+mapBRDCounties <- map_kreise_EW2_clinics_summarized %>% select(-ID, -name) %>% select(year, everything())
 
 usethis::use_data(mapBRDCounties, overwrite = TRUE)
 

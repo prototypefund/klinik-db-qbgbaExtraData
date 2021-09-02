@@ -6,7 +6,7 @@
 \title{A SpatialPolygonsDataFrame comprising all German counties enriched
 with hospital and population data.}
 \format{
-A \code{SpatialPolygonsDataFrame} with 3.962 entries and 27 columns of
+A \code{simple feature collection} with 3.962 entries and 27 columns of
     additional data.
 \describe{
   \item{\code{year}}{The year of the data entry, between 2015 and 2019.}
@@ -74,6 +74,6 @@ mapBRDCounties
 \description{
 This dataset contains the geometric information to plot the shapes of all
 German counties together with aggregated data about the hospitals from the
-"Qualitaetsberichte der Krankenhaeuser" as a \code{SpatialPolygonsDataFrame}.
+"Qualitaetsberichte der Krankenhaeuser" as a \code{simple feature collection}.
 }
 \keyword{datasets}
