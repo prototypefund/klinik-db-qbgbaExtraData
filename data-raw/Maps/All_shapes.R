@@ -196,18 +196,18 @@ rm(df_tmp, map_land_EW2_clinics, map_land_EW2, map_land_EW, map_land)
 
 # Store data --------------------------------------------------------------
 
-
-df_tmp <- map_land_EW2_clinics_summarized %>%
+map_land_EW2_clinics_summarized <- map_land_EW2_clinics_summarized %>%
     ungroup() %>%
     rename("AGS_1" = AGS,
            "GEN_1" = GEN,
-           "BEZ_1" = BEZ) %>%
+           "BEZ_1" = BEZ)
+df_tmp <- map_land_EW2_clinics_summarized %>%
     select(AGS_1, GEN_1, BEZ_1)
 st_geometry(df_tmp) <- NULL
 df_tmp <- df_tmp %>%
     distinct()
-
 map_kreise_EW2_clinics_summarized <- map_kreise_EW2_clinics_summarized %>%
+    ungroup() %>%
     rename("AGS_2" = AGS,
            "GEN_2" = GEN,
            "BEZ_2" = BEZ) %>%
