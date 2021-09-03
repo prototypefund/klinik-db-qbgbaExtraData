@@ -6,18 +6,20 @@
 \title{A SpatialPolygonsDataFrame comprising the 16 states of Germany enriched
 with hospital and population data.}
 \format{
-A \code{simple feature collection} with 160 entries and 24 columns of
+A \code{simple feature collection} with 80 entries and 25 columns of
     additional data.
 \describe{
   \item{\code{year}}{The year of the data entry, between 2015 and 2019.}
-  \item{\code{Residents}}{How many residents lived in the respective area?}
-  \item{\code{gender}}{Does the data entry focus on female or male persons?}
   \item{\code{AGS_1}}{This character string comprises the "Amtliche Gemeindeschluessel"
       (AGS) for each state, where the first and second character represents
       the state.}
   \item{\code{GEN_1}}{Contains the name of the respective state.}
   \item{\code{BEZ_1}}{Defines the type of geometric entity. Here, every entry is
       a "Land".}
+  \item{\code{male}}{How many male residents lived in the respective area
+      in this year?}
+  \item{\code{female}}{How many female residents lived in the respective area
+      in this year?}
   \item{\code{numberHospitals}}{How many hospitals were counted in this area?}
   \item{\code{typeRatioPrivat}}{Ratio of privately owned hospitals in this area.}
   \item{\code{typeRatioOeffentlich}}{Ratio of publicly owned hospitals in this area.}
