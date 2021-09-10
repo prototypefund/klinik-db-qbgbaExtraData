@@ -19,7 +19,7 @@ BugReports: https://gitlab.com/klinik-db/qbgbaExtraData/-/issues
 License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true
-LazyDataCompression: bzip2
+LazyDataCompression: xz
 Imports:
     dplyr,
     magrittr,
