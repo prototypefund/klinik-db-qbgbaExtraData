@@ -269,7 +269,6 @@ map_kreise_EW2_clinics_summarized <- map_kreise_EW2_clinics_summarized %>%
            AGS_1, GEN_1, BEZ_1, AGS_2, GEN_2, BEZ_2, everything())
 rm(df_tmp)
 
-
 mapBRDStates <- map_land_EW2_clinics_summarized %>%
     select(-(ADE:DEBKG_ID))
 
@@ -281,6 +280,11 @@ mapBRDCounties <- map_kreise_EW2_clinics_summarized %>%
     select(-name)
 
 usethis::use_data(mapBRDCounties, overwrite = TRUE)
+
+tools::checkRdaFiles(sort(Sys.glob(c("data/*.rda", "data/*.RData"))))
+tools::resaveRdaFiles(sort(Sys.glob(c("data/*.rda", "data/*.RData"))))
+
+sum(tools::checkRdaFiles(sort(Sys.glob(c("data/*.rda", "data/*.RData"))))[, 1]) / 1024
 
 zip(zipfile = "./data-raw/Maps/All_shapes.zip",
     list.files(path = "./data-raw/Maps/", pattern = "^VG", full.names = TRUE))
